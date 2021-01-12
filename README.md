@@ -13,7 +13,9 @@ Virtual box에 설치한 경우
 $ sudo apt-get install build-essential linux-headers-$(uname -r)
 ```
 
-### 2. 업데이트를 하자
+### 2. 프로그램 충돌방지 
+
+업데이트를 하자
 ```
 $ sudo apt-get update && upgrade
 $ sudo apt dist-upgrade
