@@ -2,16 +2,34 @@
 
 ## INSTALL UBUNTU Desktop 18.04.5 (Virtual machine OR Multi boot)
  
-### 1. DOWNLOAD UBUNTU 
+### 0. DOWNLOAD UBUNTU 
 
 You shuld download with torrent because of downloading rapidlly
 
 https://ubuntu.com/download/alternative-downloads
 
+
+### 1. Virtual-box에 ubuntu 설치
+
+
+- 제어판 -> Windows 기능 켜기/끄기 -> Hyper-V 해제    // 없으면 안해도 됨
+- (BIOS 모드) Advanced Mode -> Intel VT-x 또는 AMD-V Enable   // 맥은 안해도됨
+
+
+- 머신 -> 새로만들기
+- 메모리 크기 지정 (2048 MB 이상)
+- 하드디스크 생성
+ - 지금 새 가상 하드 디스크 
+
+1. 
+
 Virtual box에 설치한 경우
 ```
 $ sudo apt-get install build-essential linux-headers-$(uname -r)
 ```
+
+
+
 
 ### 2. 프로그램 충돌방지 
 
