@@ -11,11 +11,11 @@ https://ubuntu.com/download/alternative-downloads
 
 ### 1. INSTALL UBUNTU Desktop 18.04.5 (Virtual machine OR Multi boot)
 
-HOST 설정
+#### 1.1. HOST 설정
 - 제어판 -> Windows 기능 켜기/끄기 -> Hyper-V 해제    // 없으면 안해도 됨
 - (BIOS 모드) Advanced Mode -> Intel VT-x 또는 AMD-V Enable   // 맥은 안해도됨
 
-VM
+#### 1.2. VM
 - 머신 -> 새로만들기
 - 메모리 크기 지정 (2048 MB 이상)
 
