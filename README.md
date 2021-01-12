@@ -18,6 +18,7 @@ $ sudo apt-get install build-essential linux-headers-$(uname -r)
 업데이트를 하자
 ```
 $ sudo apt-get update && upgrade
+$ sudo apt dist-upgrade
 ```
 
 Build할 때 공통적으로 발생하는 문제를 방지하기 위해 필요한 패키지들을 설치해준다.
@@ -49,6 +50,27 @@ Keep in mind that the version 2020.02 that is mentioned in the above command is 
 
 ```
 $ pyenv install anaconda3-2020.02
+$ git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
+$ source ~/.bash_profile
+```
+
+### 5. set virtualenv
+
+```
+$ pyenv virtualenv anaconda3-2020.02 deeplearning
+$ pyenv versions
+  anaconda3-2020.02
+  anaconda3-2020.02/envs/deeplearning
+  deeplearning
+$ pyenv activate deeplearning
+(deeplearning) $ python -v
+...
+```
+
+가상화 종료
+```
+$ pyenv deactivate
 ```
 
 
