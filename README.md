@@ -8,7 +8,7 @@ You shuld download with torrent because of downloading rapidlly
 
 https://ubuntu.com/download/alternative-downloads
 
-### 2.  
+### 2. 
 
 업데이트를 하자
 ```
