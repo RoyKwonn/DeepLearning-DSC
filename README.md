@@ -11,33 +11,48 @@ https://ubuntu.com/download/alternative-downloads
 
 ### 1. Virtual-box에 ubuntu 설치
 
-
+HOST 설정
 - 제어판 -> Windows 기능 켜기/끄기 -> Hyper-V 해제    // 없으면 안해도 됨
 - (BIOS 모드) Advanced Mode -> Intel VT-x 또는 AMD-V Enable   // 맥은 안해도됨
 
-
+VM
 - 머신 -> 새로만들기
 - 메모리 크기 지정 (2048 MB 이상)
-- 하드디스크 생성
- - 지금 새 가상 하드 디스크 
 
-1. 
+VM-하드디스크 생성
+- 지금 새 가상 하드 디스크 만들기
+- VDI (VirtualBox 디스크 이미지)
+- 고정 크기
+- 파일 위치 및 크기 (파일크기 30 GB 이상)
 
-Virtual box에 설치한 경우
+VM-설정 (언급된건 체크)
+- 일반 항목 -> 클립보드, 드래그 앤 드롭 : 양방향 설정
+- 시스템 항목 -> 마더보드 : 플로피 디스크 해제, ICH9 칩셋, EFI 사용하기
+- 시스템 항목 -> 프로세서 : 프로세서 개수(실제 호스트 프로세서의 절반), PAN/NX 사용하기 
+- 디스플레이 항목 -> 화면 : 비디오메모리(최대), 3차원 가속 사용하기
+- 저장소 항목 -> CD아이콘(광학 드라이브) : 다운받은 UBUNTU_XXXX.ISO 선택
+
+머신 실행
+- 언어, 사용자 이름, 비번 설정
+- 그외 항목은 디폴트 선택
+
+
+터미널 실행
 ```
+$ sudo apt-get update && upgrade
+$ sudo apt dist-upgrade
 $ sudo apt-get install build-essential linux-headers-$(uname -r)
 ```
 
+VM-상단메뉴
+- 장치 -> 게스트확장 CD 이미지 삽입
+- 실행
+- 설치완료 후 바탕화면의 CD 아이콘 오른쪽 마우스 클릭하여 꺼내기
+- 재부팅
 
 
 
 ### 2. 프로그램 충돌방지 
-
-업데이트를 하자
-```
-$ sudo apt-get update && upgrade
-$ sudo apt dist-upgrade
-```
 
 Build할 때 공통적으로 발생하는 문제를 방지하기 위해 필요한 패키지들을 설치해준다.
 ```
