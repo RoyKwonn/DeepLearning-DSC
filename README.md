@@ -13,9 +13,7 @@ Virtual box에 설치한 경우
 $ sudo apt-get install build-essential linux-headers-$(uname -r)
 ```
 
-### 2. 
-
-업데이트를 하자
+### 2. 업데이트를 하자
 ```
 $ sudo apt-get update && upgrade
 $ sudo apt dist-upgrade
@@ -68,7 +66,7 @@ $ pyenv activate deeplearning
 ...
 ```
 
-가상화 종료
+## 6. 가상화 종료
 ```
 $ pyenv deactivate
 ```
