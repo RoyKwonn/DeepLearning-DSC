@@ -38,8 +38,14 @@ $ echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
-잘 설치되어있는지 확인해보자.
+### 4. Install anaconda3-2020.02
+
+Keep in mind that the version 2020.02 that is mentioned in the above command is only compatible with Python 3.7. So, if you are operating the 2.7 version of Python, then use the link mentioned above to find the compatible version of Anaconda with your Python 2.7 version.
+
 ```
-$ pyenv versions
+$ pyenv install anaconda3-2020.02
 ```
+
+
+
 
