@@ -1,6 +1,6 @@
 # DeapLearning-DSC
 
-## INSTALL UBUNTU Desktop 18.04.5 (Virtual machine OR Multi boot)
+## 개발환경 
  
 ### 0. DOWNLOAD UBUNTU 
 
@@ -9,7 +9,7 @@ You shuld download with torrent because of downloading rapidlly
 https://ubuntu.com/download/alternative-downloads
 
 
-### 1. Virtual-box에 ubuntu 설치
+### 1. INSTALL UBUNTU Desktop 18.04.5 (Virtual machine OR Multi boot)
 
 HOST 설정
 - 제어판 -> Windows 기능 켜기/끄기 -> Hyper-V 해제    // 없으면 안해도 됨
@@ -90,6 +90,7 @@ $ source ~/.bash_profile
 
 ### 5. set virtualenv
 
+가상화 설정
 ```
 $ pyenv virtualenv anaconda3-2020.02 deeplearning
 $ pyenv versions
@@ -101,11 +102,38 @@ $ pyenv activate deeplearning
 ...
 ```
 
-## 6. 가상화 종료
+가상화 종료
 ```
 $ pyenv deactivate
 ```
 
+### 6. Anaconda 설정
 
+가상화 실행상태에서
+```
+(deeplearning) $ conda create -n py37 python=3.7
+(deeplearning) $ conda activate py37
+(py37)(deeplearning) $ pip install tensorflow==2.0.0
+(py37)(deeplearning) $ pip install keras==2.3
 
+```
+
+혹시 바로 안된다면, 아래 명령어 실행후 다시 위에 작업을 해주어라
+```
+(py37)(deeplearning) $ pyenv deactivate deeplearning
+```
+
+아래와 같은 내용이 출력된다면 잘 설치한 것이다.
+```
+(py37)(deeplearning) $ python
+Python 3.7.9 (default, Aug 31 2020, 12:42:55) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+>>> print(tf.__version__)
+2.0.0
+>>> import keras
+Using TensorFlow backend.
+>>> exit()
+```
 
