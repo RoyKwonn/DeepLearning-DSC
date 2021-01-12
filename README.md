@@ -1,4 +1,4 @@
-# DeapLearning-DSC
+# DeepLearning-DSC
 
 ## 개발환경 
  
