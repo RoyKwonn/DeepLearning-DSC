@@ -137,3 +137,22 @@ Using TensorFlow backend.
 >>> exit()
 ```
 
+### 7. 사용하는 툴
+
+장단점은 직접 찾아보시길...
+
+#### 7.1. jupyter (anaconda설치할때 같이 설치됨)
+```
+(py37)(deeplearning) $ jupyter notebook
+```
+
+#### 7.2. PyCharm-community
+
+파이참을 설치하기전 필요한 라이브러리를 미리 설치해 둡니다.
+```
+(py37)(deeplearning) $ pip install numpy pandas matplotlib seaborn scipy sklearn h5py
+```
+
+설치링크 : https://www.jetbrains.com/ko-kr/pycharm/download/#section=linux
+
+
