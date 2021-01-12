@@ -38,6 +38,8 @@ https://ubuntu.com/download/alternative-downloads
 
 
 #### 1.6. 터미널 실행
+
+dist-upgrade는 시간 여유많을 때 합시다. 
 ```
 $ sudo apt-get update && upgrade
 $ sudo apt dist-upgrade
