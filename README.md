@@ -8,6 +8,11 @@ You shuld download with torrent because of downloading rapidlly
 
 https://ubuntu.com/download/alternative-downloads
 
+Virtual box에 설치한 경우
+```
+$ sudo apt-get install build-essential linux-headers-$(uname -r)
+```
+
 ### 2. 
 
 업데이트를 하자
