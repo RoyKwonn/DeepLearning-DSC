@@ -158,3 +158,7 @@ Using TensorFlow backend.
 설치링크 : https://www.jetbrains.com/ko-kr/pycharm/download/#section=linux
 
 
+### 8. git에서 프로젝트 다운로드 방법
+
+터미널에서 git clone 다운받고싶은URL
+
