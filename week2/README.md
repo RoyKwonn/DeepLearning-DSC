@@ -1,4 +1,4 @@
-# DeepLearning-DSC
+# Week2 (DeepLearning-DSC)
 
 ## 개발환경 
  
