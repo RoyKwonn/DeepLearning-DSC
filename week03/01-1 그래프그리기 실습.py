@@ -42,6 +42,12 @@ a = dividend / divisor
 b = my - (mx*a)
 
 
+# 평균 제곱 오차 설명용
+# a = 3, b = 76
+# a = 1, b = 82
+# a = 5, b = 72x
+
+
 # 출력으로 확인
 print("기울기 a =", a)
 print("y 절편 b =", b)
