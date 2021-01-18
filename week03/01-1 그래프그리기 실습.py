@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 
-import matplotlib.pyplot as plt # matplotlib의 pyplot 기
+import matplotlib.pyplot as plt # matplotlib의 pyplot 가능
 import numpy as np # 숫자 배열 가능
 
-
+# 기울기 : m, y절편 : n
 def draw_linear_graph(m = 1, n = 1):
     # 인자를 입력하지 않는 경우, default 값으로 m=1, n=1 설정
     x = np.arange(0,10,2) # x값 : 0부터 10까지 2간격의 수
     y = [(m*num + n) for num in x] # y = mx + n이라는 일차 방정식 그래프
     plt.plot(x,y) # x, y 값을 담은 그래프 object 만들기
-    title = '[실습] 선형회기 - 최소 제곱법 : y = ' +  str(m) + 'x + ' + str(n)
+    title = 'Method of least squares : y = ' +  str(m) + 'x + ' + str(n)
     plt.title(title)
 
 #공부시간 X와 성적 Y의 리스트를 만듭니다.
@@ -49,8 +49,8 @@ print("y 절편 b =", b)
 # 그래프로 나타내 봅니다.
 plt.figure(figsize=(8,5))
 plt.grid() # 좌표에 grid 표시
-plt.xlabel('공부 시간') # x축 이름
-plt.ylabel('시험 점수') # y축 이름
+plt.xlabel('time') # x축 이름
+plt.ylabel('score') # y축 이름
 plt.scatter(x, y)
 draw_linear_graph(a, b)
 plt.show()
