@@ -2,9 +2,7 @@
 -----
 <p align="center">
 <img style="margin:50px 0 10px 0" src="img/neuron.png" height="150px" width="150px">
-
 </p>
-<center style = "color:gray">이렇게 보면 좀... 징그럽기도 하고...?</center>
 
 </br>
 
@@ -48,7 +46,6 @@
 
 <p align="center">
 <img style="margin:50px 0 10px 0" src="img/request.png" height="150px" width="150px">
-<center style = "color:gray">우리 지난시간에 뭘 했었죠?</center>
 </p>
 
 </br>
@@ -82,7 +79,6 @@
 
 <p align="center">
 <img style="margin:50px 0 10px 0" src="img/xor.jpg" height="250px" width="500px">
-<center style = "color:gray">비교해 봅시다! </center>
 </p>
 
 > 일반적으로 우리는 선형회귀와 로지스틱 선형 회귀를 통해 선이나 2차원 면을 그리는 작업에 대해 
