@@ -2,8 +2,9 @@
 -----
 <p align="center">
 <img style="margin:50px 0 10px 0" src="img/neuron.png" height="150px" width="150px">
-<center style = "color:gray">이렇게 보면 좀... 징그럽기도 하고...?</center>
+
 </p>
+<center style = "color:gray">이렇게 보면 좀... 징그럽기도 하고...?</center>
 
 </br>
 
