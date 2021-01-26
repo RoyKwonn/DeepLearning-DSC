@@ -79,7 +79,7 @@
 ------
 
 <p align="center">
-<img style="margin:50px 0 10px 0" src="img/build.jpg" height="250px" width="400px">
+<img style="margin:50px 0 10px 0" src="img/build.jpg" height="400px" width="400px">
 </p>
 
 </br>
@@ -177,7 +177,7 @@
 </br>
 
 <p align="center">
-<img style="margin:50px 0 10px 0" src="img/route.jpg" height="250px" width="400px">
+<img style="margin:50px 0 10px 0" src="img/route.jpg" height="400px" width="400px">
 </p>
 
 </br>
