@@ -95,13 +95,13 @@
 </br>
 </br>
 
-<strong>
+<strong>  
 
-<center> n1 = σ(x1 * w11 + x2 * w21 + b1) </center>
+<center> n1 = σ(x1 * w11 + x2 * w21 + b1) </center>  
 
-<center>n2 = σ(x1 * w12 + x2 * w22 + b2) </center>
+<center>n2 = σ(x1 * w12 + x2 * w22 + b2) </center>  
 
-</strong>
+</strong>  
 
 </br>
 
