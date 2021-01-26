@@ -99,6 +99,8 @@
 
 <center> n1 = σ(x1 * w11 + x2 * w21 + b1) </center>  
 
+</br>
+
 <center>n2 = σ(x1 * w12 + x2 * w22 + b2) </center>  
 
 </strong>  
