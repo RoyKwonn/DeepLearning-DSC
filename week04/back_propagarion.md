@@ -25,8 +25,8 @@
 </br>
 
 > 임의의 가중치를 선언 하고 결과값을 이용해 오차를 구한 뒤 이 오차가 최소인 지점으로 계속해서  
-> 조금씩 이동시킵니다.  이 오차가 최소가 되는 점을 찾는 것
-> 이것이 우리가 알고자 하는 답이랍니다
+> 조금씩 이동시킵니다.  이 오차가 최소가 되는 점을 찾는 것  
+> 이것이 우리가 알고자 하는 답이랍니다  
 > 앞서 3주차 수업때 익힌 **로지스틱 회귀**와 **선형회귀**의 개념을 기억해내신다면 이는 충분히 이해할 수 있을거에요
 
 </br>
@@ -282,7 +282,7 @@ if __name__ == '__main__':
 
 
 <pre>
-</code>
+<code>
 
 import os
 import numpy as np
@@ -311,7 +311,7 @@ model.add(Dense(1,activation='sigmoid'))
 
 print(model.summary())
 
-#평균제곱오차, 선형회귀형태로 학습옵션 설정
+#평균제곱오차, 경사하강형태로 학습옵션 설정
 model.compile(loss='mean_squared_error', optimizer='sgd', metrics=['accuracy'])
 
 #출력값은 1
