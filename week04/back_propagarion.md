@@ -106,7 +106,7 @@
 </br>
 </br>
 
-# 역전파 코드
+# 역전파 코드 (파이썬 코드)
 ----
 
 <pre>
@@ -279,3 +279,61 @@ if __name__ == '__main__':
 
 </code>
 </pre>
+
+
+<pre>
+</code>
+
+import os
+import numpy as np
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+#데이터 셋 설정
+X = np.array([[0,0], [0,1], [1,0], [1,1]])
+y = np.array([[0], [1], [1], [0]])
+
+#각각의 배열 출력
+print(X)
+print(y)
+
+#케라스 라이브러리 import
+import keras
+from keras.models import Sequential
+from keras.layers import Dense
+
+#연속적인 형태를 갖는 모델 생성
+model = Sequential()
+
+#은닉층과 출력층 추가
+model.add(Dense(2, input_dim=2, activation='relu'))
+model.add(Dense(1,activation='sigmoid'))
+
+print(model.summary())
+
+#평균제곱오차, 선형회귀형태로 학습옵션 설정
+model.compile(loss='mean_squared_error', optimizer='sgd', metrics=['accuracy'])
+
+#출력값은 1
+batch_size = 1
+
+#반복횟수는 1000
+epochs = 1000
+
+#학습 시작
+model.fit(X, y, batch_size=batch_size, epochs=epochs, shuffle=True, verbose=1)
+
+#모델 테스트
+predict1 = model.predict(np.array([[0,0],]))
+predict2 = model.predict(np.array([[0,1],]))
+predict3 = model.predict(np.array([[1,0],]))
+predict4 = model.predict(np.array([[1,1],]))
+
+#결과 출력
+print(predict1)
+print(predict2)
+print(predict3)
+print(predict4)
+
+</code>
+<pre>
