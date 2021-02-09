@@ -33,4 +33,9 @@ model.add(Dense(1, activation='sigmoid'))
 
 # 딥러닝을 실행합니다.
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-model.fit(X, Y, epochs=100, batch_size=10)
+model.fit(X, Y, epochs=100, batch_size=8)
+
+print ("\n Accuracy: %.4f" %(model.evaluate(X,Y)[1]))
+predictVal = model.predict(X, batch_size=16)
+for i in range(len(predictVal)):
+    print("%.4f" %predictVal[i])
