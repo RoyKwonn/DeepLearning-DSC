@@ -25,8 +25,8 @@
 </br>
 
 > 임의의 가중치를 선언 하고 결과값을 이용해 오차를 구한 뒤 이 오차가 최소인 지점으로 계속해서  
-> 조금씩 이동시킵니다.  이 오차가 최소가 되는 점을 찾는 것
-> 이것이 우리가 알고자 하는 답이랍니다
+> 조금씩 이동시킵니다.  이 오차가 최소가 되는 점을 찾는 것  
+> 이것이 우리가 알고자 하는 답이랍니다  
 > 앞서 3주차 수업때 익힌 **로지스틱 회귀**와 **선형회귀**의 개념을 기억해내신다면 이는 충분히 이해할 수 있을거에요
 
 </br>
@@ -106,7 +106,7 @@
 </br>
 </br>
 
-# 역전파 코드
+# 역전파 코드 (파이썬 코드)
 ----
 
 <pre>
@@ -279,3 +279,61 @@ if __name__ == '__main__':
 
 </code>
 </pre>
+
+
+<pre>
+<code>
+
+import os
+import numpy as np
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+#데이터 셋 설정
+X = np.array([[0,0], [0,1], [1,0], [1,1]])
+y = np.array([[0], [1], [1], [0]])
+
+#각각의 배열 출력
+print(X)
+print(y)
+
+#케라스 라이브러리 import
+import keras
+from keras.models import Sequential
+from keras.layers import Dense
+
+#연속적인 형태를 갖는 모델 생성
+model = Sequential()
+
+#은닉층과 출력층 추가
+model.add(Dense(2, input_dim=2, activation='relu'))
+model.add(Dense(1,activation='sigmoid'))
+
+print(model.summary())
+
+#평균제곱오차, 경사하강형태로 학습옵션 설정
+model.compile(loss='mean_squared_error', optimizer='sgd', metrics=['accuracy'])
+
+#출력값은 1
+batch_size = 1
+
+#반복횟수는 1000
+epochs = 1000
+
+#학습 시작
+model.fit(X, y, batch_size=batch_size, epochs=epochs, shuffle=True, verbose=1)
+
+#모델 테스트
+predict1 = model.predict(np.array([[0,0],]))
+predict2 = model.predict(np.array([[0,1],]))
+predict3 = model.predict(np.array([[1,0],]))
+predict4 = model.predict(np.array([[1,1],]))
+
+#결과 출력
+print(predict1)
+print(predict2)
+print(predict3)
+print(predict4)
+
+</code>
+<pre>
