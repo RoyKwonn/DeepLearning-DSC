@@ -13,7 +13,6 @@ import tensorflow as tf
 np.random.seed(3)
 tf.random.set_seed(3)
 
-
 import os
 
 #오류 발생을 위해 경로를 설정
